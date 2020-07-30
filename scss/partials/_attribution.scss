@@ -1,0 +1,21 @@
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translate(-50%, 0);
+  font-size: 1.3rem;
+  a {
+    color: color(link);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:nth-child(1) {
+      border-right: 0.1rem solid;
+      padding-right: 1rem;
+    }
+    &:nth-child(2) {
+      padding-left: 1rem;
+    }
+  }
+}
