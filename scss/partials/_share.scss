@@ -1,0 +1,64 @@
+.text-container {
+  position: relative;
+}
+
+div.share {
+  position: absolute;
+  top: 20rem;
+  right: -6.5rem;
+  display: flex;
+  color: color(desaturatedDarkBlue);
+  background-color: color(veryDarkGrayishBlue);
+  align-items: center;
+  border-radius: 0.8rem;
+  height: 6rem;
+  padding: 0 3.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in;
+  ins {
+    width: 10rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+    li:last-child {
+      display: none;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background-color: color(grayishBlue);
+      cursor: pointer;
+      img {
+        width: 3.5rem;
+        transform: scale(0.5);
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2.9rem;
+    height: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: inherit;
+    bottom: -1.7rem;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  }
+}
+
+.share.open {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -115,6 +115,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .text-container div:last-child ul li:last-child img {
@@ -171,6 +172,90 @@ main {
 
 .attribution a:nth-child(2) {
   padding-left: 1rem;
+}
+
+.text-container {
+  position: relative;
+}
+
+div.share {
+  position: absolute;
+  top: 20rem;
+  right: -6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #6d7f97;
+  background-color: #48556a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.8rem;
+  height: 6rem;
+  padding: 0 3.5rem;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+}
+
+div.share ins {
+  width: 10rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
+
+div.share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.share ul img {
+  cursor: pointer;
+}
+
+div.share ul li:last-child {
+  display: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #9eafc2;
+  cursor: pointer;
+}
+
+div.share ul li:last-child img {
+  width: 3.5rem;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+div.share::after {
+  content: "";
+  position: absolute;
+  width: 2.9rem;
+  height: 2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: inherit;
+  bottom: -1.7rem;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.share.open {
+  opacity: 1;
+  pointer-events: all;
 }
 
 @media (max-height: 446px) {
@@ -283,6 +368,40 @@ main {
   main {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+}
+
+@media (max-width: 1100px) {
+  main .share {
+    bottom: 0;
+    left: 0;
+    top: auto;
+    right: 0;
+    z-index: 1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 8rem;
+  }
+  main .share:after {
+    display: none;
+  }
+  main .share ins {
+    width: 30%;
+  }
+  main .share ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 70%;
+  }
+  main .share ul li:last-child {
+    display: initial;
+  }
+}
+
+@media (min-width: 975px) and (max-width: 1100px) {
+  main .share {
+    border-radius: 0;
+    border-bottom-right-radius: 1.2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

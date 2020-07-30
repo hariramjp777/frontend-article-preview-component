@@ -123,3 +123,38 @@
     transform: scale(0.6);
   }
 }
+
+//share
+
+@media (max-width: 1100px) {
+  main .share {
+    bottom: 0;
+    left: 0;
+    top: auto;
+    right: 0;
+    z-index: 1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 8rem;
+    &:after {
+      display: none;
+    }
+    ins {
+      width: 30%;
+    }
+    ul {
+      justify-content: space-around;
+      width: 70%;
+    }
+    ul li:last-child {
+      display: initial;
+    }
+  }
+}
+
+@media (min-width: 975px) and (max-width: 1100px) {
+  main .share {
+    border-radius: 0;
+    border-bottom-right-radius: 1.2rem;
+  }
+}
