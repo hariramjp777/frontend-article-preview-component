@@ -1,0 +1,125 @@
+@media (max-height: 446px) {
+  main {
+    height: 446px;
+  }
+  .attribution {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+
+// @media (max-width: 974px) {
+//   main {
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     width: 56.6rem;
+//     height: auto;
+
+//     .image-container {
+//       background-position: top;
+//       border-radius: 1.2rem 1.2rem 0 0;
+//       background-size: cover;
+//       //   background-attachment: fixed;
+//     }
+//     .text-container {
+//       border-radius: 0 0 1.2rem 1.2rem;
+//       height: auto;
+//       padding-bottom: 3rem;
+//     }
+//   }
+// }
+
+@media (max-width: 974px) {
+  main {
+    flex-direction: column;
+
+    .image-container {
+      flex-basis: 200px;
+      width: 330px;
+      border-radius: 1.2rem 1.2rem 0 0;
+      box-shadow: none;
+      box-shadow: -0.2rem -0.2rem 2rem color(lightBlue),
+        0.2rem 0 2rem color(lightBlue);
+    }
+
+    .text-container {
+      flex-basis: 253px;
+      width: 330px;
+      border-radius: 0 0 1.2rem 1.2rem;
+      box-shadow: none;
+      box-shadow: -0.2rem 0 2rem color(lightBlue),
+        0.2rem 0.2rem 2rem color(lightBlue);
+
+      div:first-child {
+        padding: 4rem 4rem 0 4rem;
+        p:first-child {
+          font-size: 1.5rem;
+          transform: scale(1.1);
+        }
+        p:last-child {
+          font-size: 1.25rem;
+          transform: scale(1.1);
+        }
+      }
+
+      div:last-child {
+        padding: 0 4rem 3rem;
+        ul {
+          transform: scale(1.1);
+          align-items: center;
+          li:nth-last-child(2) {
+            margin: 0;
+            span {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 974px) and (max-height: 604px) {
+  main {
+    height: 57rem;
+  }
+  .attribution {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+
+//Scaling
+
+@media (max-width: 354px) {
+  main {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 312px) {
+  main {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 275px) {
+  main {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 242px) {
+  main {
+    transform: scale(0.67);
+  }
+}
+
+@media (max-width: 229px) {
+  main {
+    transform: scale(0.6);
+  }
+}
