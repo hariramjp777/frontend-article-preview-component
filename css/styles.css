@@ -30,6 +30,13 @@ body ul {
   list-style-type: none;
 }
 
+body img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 main {
   height: inherit;
   width: inherit;

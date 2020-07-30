@@ -1,4 +1,3 @@
-
 # Frontend Mentor Challenge
 
 ## Article Preview Component [:link:][link]
@@ -19,15 +18,15 @@
 
 ---
 
-- At 320px :iphone:
-
-![At 320px][at320px]
-
----
-
 - At 240px :iphone:
 
 ![At 240px][at240px]
+
+---
+
+- Active States :computer:
+
+![active-states][active-states]
 
 ---
 
@@ -41,5 +40,5 @@
 [link]: https://hariramjp777.github.io "Live Site"
 [at1440px]: ./assets/designs/at1440px.png "At 1440px"
 [at375px]: ./assets/designs/at375px.png "At 375px"
-[at320px]: ./assets/designs/at320px.png "At 320px"
+[active-states]: ./assets/designs/active-states.png "Active States"
 [at240px]: ./assets/designs/at240px.png "At 240px"
